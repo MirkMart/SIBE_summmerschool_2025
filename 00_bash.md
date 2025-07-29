@@ -65,7 +65,7 @@ sudo command #allows users to run programs if he/she has sudoer priviledges
 chmod #change permissions of your files (or directory with chmod –r)  
 ```
 
-![chmod](../99_figures/chmod.png)
+![chmod](./99_figures/chmod.png)
 
 ---
 
