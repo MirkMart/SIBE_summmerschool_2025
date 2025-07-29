@@ -28,4 +28,6 @@ A very useful file is [.gitignore](https://docs.github.com/en/get-started/gettin
 
 ![git staging area working](./99_figures/git_staging_area.jpeg)
 
+## Git tree and branches
+
 ![git tree](./99_figures/git_tree.png)
