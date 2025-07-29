@@ -26,6 +26,6 @@ A very useful file is [.gitignore](https://docs.github.com/en/get-started/gettin
 
 ## How Git works
 
-![git staging area working](../99_Figures/git_staging_area.jpeg)
+![git staging area working](./99_figures/git_staging_area.jpeg)
 
-![git tree](../99_Figures/git_tree.png)
+![git tree](./99_figures/git_tree.png)
