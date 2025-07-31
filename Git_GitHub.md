@@ -31,3 +31,33 @@ A very useful file is [.gitignore](https://docs.github.com/en/get-started/gettin
 ## Git tree and branches
 
 ![git tree](./99_figures/git_tree.png)
+
+## Handy operations
+
+More are presente [here](https://www.codecademy.com/courses/learn-git/articles/handy-git-operations)
+
+### Stash
+
+The command `git stash` allows you to store your work and changes temporarily for later use. It is useful when you are working on a particular branch of the git tree and find that there are small changes that need to be done to a previous commit, changes that are mandatory to your current work. To leave a branch is important to be at a clean commit point and, while experimentig, maybe you are not ready to commit the changes you have done so far in the new branch. `git stash` allows you to go back to a synchronised working tree.
+
+Once the bug is fixed, `git stash pop` is the command used to retrieve the stashed code.
+
+### Amend
+
+The command `git commit --amend` is a very useful resource when you need to update a precedent commit where something was missing. Commits should be specific, clear, and complete. It can happen that after an important change in your code that deserved a commit, you find that you forget a comma or a dot. In this case adding `--amend` to the standard `git commit`, after the obligatory `git add`, can **replace** the precedent commit with a new one slightly changed as intended. The further option `--no-edit` can be used to leave the commit messagge as the previous one.
+
+### Alias
+
+As bash, also git allows you to write customed aliases when git commands begin to be a bit too long. In this case, you will change the global configuration of your git like the following example, where the new command is specified after `alias.` and the command to substitute is encloused between quotes.
+
+```bash
+git config --global alias.co "checkout"
+git config --global alias.br "branch"
+git config --global alias.glop "log --pretty=format:"%h %s" --graph"
+```
+
+## Cheatsheet
+
+Usefull resources:
+  - [cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
+  - [git references](https://git-scm.com/docs)
