@@ -2,12 +2,12 @@
 
 [Git](https://git-scm.com/) is a version control system used to track changes in files and coordinate work on those files among multiple people. [GitHub](https://github.com/) is an hosting service for Git repositories.
 
-To synchronise our first repository we can follow one of the many useful [tutorial](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository?platform=linux&tool=webui) that GitHub developers have written during these years. Using the 'ssh URL' instead of makes things easier, to correctly set our origin.
+To synchronise our first repository we can follow one of the many useful [tutorial](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository?platform=linux&tool=webui) that GitHub developers have written during these years. Using the 'ssh URL' instead of the 'hhtp URL' makes things easier.
 
 usefult commands:
 
 ```bash
-git add <file> #add file to the stagin area
+git add <file1> <file2> <...> #add file to the stagin area
 git commit -m "commit message" #creates a new a commit 
 git push #push any new commit
 git pull #pull any changes from online repositories
@@ -28,9 +28,41 @@ A very useful file is [.gitignore](https://docs.github.com/en/get-started/gettin
 
 ![git staging area working](./99_figures/git_staging_area.jpeg)
 
+## Retracing our steps
+
+The command `git restore` substituted the tasks that `git checkout` did on files.
+
+### Files
+
+```bash
+git rm #rm a file from working directory and add the change in the staging area
+git rm --cached #remove file only from the git synchronisation
+git restore <filename> #discard uncommitted changed in the working directory
+git restore --staged <filename> #unstage a file
+```
+
+### Commits
+
+```bash
+git reset --soft #undo last commit keeping all changes in staging area
+git reset --mixed #undo last commit, unstage all changes
+git reset --hard #undo last commit, discard all changes
+git reset <filename> #like git restore --staged
+```
+
 ## Git tree and branches
 
 ![git tree](./99_figures/git_tree.png)
+
+```bash
+git branch #list braches
+git branch <branchname> #create new branch
+git branch -d <branchname> #remove branch
+git branch -m <oldname> <newname> #rename branch
+git switch <branchname> #switch to specified branch. It substitutes `git checkout`
+git switch -c <branchname> #create and switch to new branch
+git merge <branch_to_merge> #marge the specified branch into the current one
+```
 
 ## Handy operations
 
@@ -45,16 +77,6 @@ Once the bug is fixed, `git stash pop` is the command used to retrieve the stash
 ### Amend
 
 The command `git commit --amend` is a very useful resource when you need to update a precedent commit where something was missing. Commits should be specific, clear, and complete. It can happen that after an important change in your code that deserved a commit, you find that you forget a comma or a dot. In this case adding `--amend` to the standard `git commit`, after the obligatory `git add`, can **replace** the precedent commit with a new one slightly changed as intended. The further option `--no-edit` can be used to leave the commit messagge as the previous one.
-
-### Alias
-
-As bash, also git allows you to write customed aliases when git commands begin to be a bit too long. In this case, you will change the global configuration of your git like the following example, where the new command is specified after `alias.` and the command to substitute is encloused between quotes.
-
-```bash
-git config --global alias.co "checkout"
-git config --global alias.br "branch"
-git config --global alias.glop "log --pretty=format:"%h %s" --graph"
-```
 
 ## Cheatsheet
 
