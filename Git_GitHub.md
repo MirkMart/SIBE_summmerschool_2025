@@ -78,6 +78,25 @@ Once the bug is fixed, `git stash pop` is the command used to retrieve the stash
 
 The command `git commit --amend` is a very useful resource when you need to update a precedent commit where something was missing. Commits should be specific, clear, and complete. It can happen that after an important change in your code that deserved a commit, you find that you forget a comma or a dot. In this case adding `--amend` to the standard `git commit`, after the obligatory `git add`, can **replace** the precedent commit with a new one slightly changed as intended. The further option `--no-edit` can be used to leave the commit messagge as the previous one.
 
+## Collabororating on GitHub
+
+`<remote>/branch` are remote-tracking branches.
+
+```bash
+# Remotes
+git remote -v #Show remote synched repository
+git remote set-url origin <new_url> #used to change remote synching url. Usefult when selected hhtps instead of ssh
+git remote show origin #Show many usefult statistics, display the new URL for both fetch and push operations, list the local branches, and confirm that they are tracked
+
+# Branches
+git push <origin> <branch> #to create a new branch on the <origin> repository
+git branch --set-upstream-to=origin/<branch> <branch> #set local <branch> to synchronise with origin/<branch>
+
+# Fetching and merging
+git log --oneline HEAD..origin/main #see commit differences between your HEAD and the remote-tracking branch
+git diff HEAD..origin/main #see actual differences and changes
+```
+
 ## Cheatsheet
 
 Usefull resources:
