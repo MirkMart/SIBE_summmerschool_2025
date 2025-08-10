@@ -1,14 +1,16 @@
 # SIBE_summmerschool_2025
 
-Hi everyone and welcome. This is the repository of the very first part of the SIBE Summer School 2025 held in Ferrara. Here, we collected information and support material to go through the introduction of the UNIX system and of GitHub.
+**Welcome!**
 
-Before starting here are a couple of definition that should be clear:
+This repository contains all the materials for the first part of the SIBE Summer School 2025 held in Ferrara. Here, you will find information and resources to guide you thourgh an introduction of the UNIX system and GitHub.
 
-- A **terminal** is a program or interface you use to access the shell.
-- A **shell** is a command-line interface (CLI), a program that interprets commands and sends them to the operating system.
-- **Bash** is a shell and scripting language used in Unix like environment.
-- **Unix** is a family of operating systems (comprising Linux and Mac).
+Before we start, here are a few key definitions to keep in mind:
 
-A very interesting and complete book that we suggest you when approaching bioinformatic is [Bioinformatics Data Skills](https://womengovtcollegevisakha.ac.in/departments/Bioinformatics%20Data%20Skills%20Reproducible%20and%20Robust%20Research%20with%20Open%20Source%20Tools%20by%20Vince%20Buffalo.pdf) by Vince Buffalo. It is rich in suggestions, tips, and good practices to start and develop strong bioinfomatic skills. It is a resource where even people with experience can find something interesting and useful. We warmly suggest to read the first chapter of such book the first chapter and the first paragraph of the thid chapter. 
+- **Terminal**: a program or interface you use to access the shell.
+- **Shell**: a command-line interface (CLI) program that interprets commands and communicates them to the operating system.
+- **Bash**: a popular shell and scripting language used in Unix-like environments.
+- **Unix**: a family of operating systems, including Linux and macOS.
 
-As imaginable, being able "discuss" with you operating system is the only real requisite present here. To do so Linux and Mac users should not worry because their computers are already equipped with all it is necessary. Differently, windows users should download an emulator of a unix shell. Many exist on the internet, but we personally recommend [Git Bash](https://gitforwindows.org/). This can open a terminal everywhere in the system using simply "right click + open git bash here".
+WE highly recommend the book [Bioinformatics Data Skills](https://womengovtcollegevisakha.ac.in/departments/Bioinformatics%20Data%20Skills%20Reproducible%20and%20Robust%20Research%20with%20Open%20Source%20Tools%20by%20Vince%20Buffalo.pdf) by Vince Buffalo for anyone starting or advancing in bioinformatics. It's packed with practical advice, tips, and best practices. The first chapter and the opening paragraph of the third chapter are especially usefult introductions (we **highly** recommend everyone to read them). 
+
+As you might expect, the only real prerequisite here is being able to "communicate" with your operating system via the command line. Linux and macOS users don't need to worry—your computers already come equipped with everything necessary. Windows users, however, will need to install a Unix shell emulator. Many options are available, but we personally recommend [Git Bash](https://gitforwindows.org/), which lets you opne terminal anywhere by simpluy right-clicking and selecting "Open git bash here".
