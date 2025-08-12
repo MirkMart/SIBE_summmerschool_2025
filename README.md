@@ -1,4 +1,4 @@
-# SIBE_summmerschool_2025
+# SIBE summmerschool 2025
 
 **Welcome!**
 
