@@ -2,7 +2,7 @@
 
 **Welcome!**
 
-This repository contains all the materials for the first part of the SIBE Summer School 2025 held in Ferrara. Here, you will find information and resources to guide you thourgh an introduction of the UNIX system and GitHub.
+This repository contains all the materials for the first part of the [SIBE Summer School 2025 held in Ferrara](https://sites.google.com/view/sibesummerschool/home-page). Here, you will find information and resources to guide you thourgh an introduction of the UNIX system and GitHub.
 
 Before we start, here are a few key definitions to keep in mind:
 
