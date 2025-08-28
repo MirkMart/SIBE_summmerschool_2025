@@ -263,15 +263,9 @@ sed -E 's/^(chr[^:]+):([a-zA-Z]+)-([a-zA-Z]+)/\1\t\2\t\3/'
 
 ---
 
-## Conda
+## Bash scripting
 
-```bash
-conda init bash # initialize conda
-conda env list # see list of environments
-conda activate "environment_name" # activate environment_name
-conda list # see packages installed in that environment_name
-conda deactivate # close environment 
-```
+All these commands can be combined to create small (or not) customed program that can help us resolving daily tasks in bioinformatics. More is present in [Bash scripting](./Bash_scripting.md)
 
 ---
 
@@ -292,25 +286,20 @@ git rm --cached <FILENAME> #remove a file from those that are synchronised
 
 ---
 
-## Bash scripting
-
-All these commands can be combined to create small (or not) customed program that can help us resolving daily tasks in bioinformatics. More is present in [Bash scripting](./Bash_scripting.md)
-
----
-
 ## Conda environments
 
 Most of the software that you are going to use are already installed in different CONDA environments. You can have a look at [THIS](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf) cheat sheet for some usefull tips on Conda.
 
-  
 Some usefull conda commands:
 
 ```bash
+conda init bash # initialize conda
 conda create --name <ENV_NAME> #Create a target conda environment
-conda activate <ENV_NAME> #Activate a target environment
+conda activate "environment_name" # activate environment_name
 conda deactivate #Deactivate your current environment
+conda env list # see list of environments
 conda info --envs #print a list of conda environments
-conda list #print a lost of packages installed in your current environment
+conda list # see packages installed in that environment_name
 conda install -c <CONDA_CHANNEL> <PACKAGE_NAME> #install a conda package
 ```
 
