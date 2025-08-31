@@ -44,9 +44,9 @@ git restore --staged <filename> #unstage a file
 ### Commits
 
 ```bash
-git reset --soft #undo last commit keeping all changes in staging area
-git reset --mixed #undo last commit, unstage all changes
-git reset --hard #undo last commit, discard all changes
+git reset --soft HEAD~1 #undo last commit keeping all changes in staging area
+git reset --mixed HEAD~1 #undo last commit, unstage all changes
+git reset --hard HEAD~1 #undo last commit, discard all changes
 git reset <filename> #like git restore --staged
 ```
 
