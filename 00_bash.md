@@ -136,7 +136,8 @@ using Windows:
 ## Data integrity
 
 ```bash
-md5sum nomefile
+md5sum nomefile #create the 32-character hexadecimal string
+md5sum -c yourfile.ext.md5 #check automatically <yourfile.ext> against its .md5 if present
 ```
 
 ---
