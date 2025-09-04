@@ -266,13 +266,13 @@ sed -E 's/^(chr[^:]+):([a-zA-Z]+)-([a-zA-Z]+)/\1\t\2\t\3/'
 
 ## Bash scripting
 
-All these commands can be combined to create small (or not) customed program that can help us resolving daily tasks in bioinformatics. More is present in [Bash scripting](./Bash_scripting.md)
+All these commands can be combined to create small (or not) customed program that can help us resolving daily tasks in bioinformatics. More is present in [Bash scripting](./01_Bash_scripting.md)
 
 ---
 
 ## Git and GitHub
 
-More on the topic is present [here](./Git_GitHub.md)
+More on the topic is present in the [dedicated page](./02_Git_GitHub.md)
 
 ```bash
 git add <file> #add file to the stagin area
